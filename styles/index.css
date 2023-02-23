@@ -1,0 +1,225 @@
+body{
+    margin: 0;
+    padding: 60px 120px 0 120px;
+    min-height: 100vh;
+    background-color: hsl(36, 100%, 99%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Inter', sans-serif;
+}
+nav{
+    max-width: 1500px;
+}
+.attribution { 
+    font-size: 11px; text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+.future-image{
+    background-color: blue;
+    height: 400px;
+    width: 100%;
+}
+.future-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.mobile-image{
+    display: none;
+}
+
+main{
+    max-width: 1500px;
+}
+.top-container{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-gap: 2em;
+}
+h1{
+    margin: 0;
+    font-size: 3.5rem;
+}
+.future-sumary{
+    margin-top: 30px;
+    margin-bottom: 0;
+    display: flex;
+    height: 200px;
+}
+.future-left{
+    width: 50%;
+    padding-right: 70px;
+}
+.future-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    font-size: 1.2rem;
+    color: hsl(236, 13%, 42%);
+}
+.more{
+    background: hsl(5, 85%, 63%);
+    border: none;
+    min-height: 50px;
+    width: 180px;
+    color: white;
+    font-size: 0.8rem;
+    letter-spacing: 3px;
+    font-weight: 700;
+}
+.more:hover{
+    background-color: hsl(240, 100%, 5%);
+    cursor: pointer;
+}
+.future-container{
+    display: flex;
+    flex-direction: column;
+}
+.new-headline{
+    font-weight: 900;
+    font-size: 1.3rem;
+}
+.New-storys{
+    color: white;
+}
+.new-headline:hover{
+    color:  hsl(35, 77%, 62%);
+    cursor: pointer;
+}
+#devider, #devider2{
+    border-top: 1px solid hsl(236, 13%, 42%);
+    padding-top: 20px;
+}
+.new-desc{
+    color: hsl(233, 8%, 79%);
+    font-size: 0.95rem;
+}
+.new-contaner{
+    background-color: hsl(240, 100%, 5%);
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+    padding: 20px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+span{
+    color:  hsl(35, 77%, 62%);
+    height: 30px;
+    font-size: 2rem;
+    font-weight: 700;
+}
+.top-articles{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 220px;
+    grid-gap: 30px;
+}
+.top-image{
+    background-color: black;
+    height: 100%;
+    width: 160px;
+}
+.top-image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.top1, .top2, .top3{
+    display: flex;
+}
+.top-num{
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 70%;
+}
+.number{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: auto;
+    color: hsl(233, 8%, 79%);
+}
+.top-title{
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-bottom: auto;
+}
+.top-desc{
+    font-size: 1.2rem;
+    margin-bottom: auto;
+    color: hsl(236, 13%, 42%);
+    font-weight: 400;
+}
+footer{
+    margin-top: 60px;
+}
+@media all and (max-width: 700px){
+    body{
+        padding: 40px 30px 0 30px;
+    }
+    main{
+        display: block;
+    }
+    .top-container{
+        display: block;
+    }
+    .future-article{
+        display: block;
+        width: 100%;
+        margin-right: 0;
+    }
+    .future-sumary{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    .desktop-image{
+        display: none;
+    }
+    .mobile-image{
+        display: block;
+    }
+    .future-image{
+        max-height: 300px;
+    }
+
+    .future-left{
+        width: 100%;
+        padding-right: 0;
+    }
+    .future-right{
+        width: 100%;
+        font-size: 1rem;
+        height: 180px;
+    }
+    .future-right p{
+        margin-bottom: 30px;
+        height: auto;
+    }
+    .top-articles{
+        display: block;
+        height: auto;
+    }
+    .new-articles{
+        margin-top: 40px;
+        width: 100%;
+    }
+    .top1, .top2, .top3{
+        margin-bottom: 60px;
+        height: 200px;
+    }
+}

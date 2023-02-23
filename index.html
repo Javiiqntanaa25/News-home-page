@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | News homepage</title>
+  <link rel="stylesheet" href="styles/navbar.css">
+  <link rel="stylesheet" href="styles/index.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar-contaner">
+    <div class="mobile-navbar" id="expand-nav">
+      <div class="close-menu">
+        <img onclick="closeMenu()" src="assets/images/icon-menu-close.svg" alt="close">
+      </div>
+      <div class="mobile-navbar-links">
+        <a href="#">Home</a>
+        <a href="#">New</a>
+        <a href="#">Popular</a>
+        <a href="#">Trending</a>
+        <a href="#">Categories</a>
+      </div>
+    </div>
+    <div class="navbar-left">
+      <img src="assets/images/logo.svg" alt="">
+    </div>
+    <div class="navbar-right">
+      <div class="nav-buttons">
+        <a href="#">Home</a>
+        <a href="#">New</a>
+        <a href="#">Popular</a>
+        <a href="#">Trending</a>
+        <a href="#">Categories</a>
+      </div>
+      <div onclick="expandMenu()" class="hamburger-menu">
+        <img src="assets/images/icon-menu.svg" alt="">
+      </div>
+    </div>
+  </nav>
+<main>
+  <div class="top-container">
+    <article class="future-article">
+      <div class="future-container">
+        <div class="future-image">
+          <img src="assets/images/image-web-3-desktop.jpg" alt="" class="desktop-image">
+          <img src="assets/images/image-web-3-mobile.jpg" alt="" class="mobile-image">
+        </div>
+        <div class="future-sumary">
+          <div class="future-left">
+            <h1>The Bright Future of Web 3.0?</h1>
+          </div>
+          <div class="future-right">
+            <p>
+              We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+              But is it really fulfilling its promise?
+            </p>
+            <button class="more">READ MORE</button>
+          </div>
+        </div>
+      </div>
+    </article>
+    <section class="new-articles">
+      <div class="new-contaner">
+        <h2><span>New</span></h2>
+        <div class="container">
+          <div class="New-storys">
+            <div class="new-headline">Hydrogen VS Electric Cars</div>
+           <p class="new-desc">
+            Will hydrogen-fueled cars ever catch up to EVs?
+          </p> 
+          </div>
+          <div class="New-storys" id="devider2">
+            <div class="new-headline">The Downsides of AI Artistry</div>
+            <p class="new-desc">
+              What are the possible adverse effects of on-demand AI image generation?
+            </p>
+          </div>
+          <div class="New-storys" id="devider">
+            <div class="new-headline">Is VC Funding Drying Up?</div>
+            <p class="new-desc">
+              Private funding by VC firms is down 50% YOY. We take a look at what that means.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <section class="top-articles">
+    <div class="top1">
+      <div class="top-image">
+        <img src="assets/images/image-retro-pcs.jpg" alt="">
+      </div>
+      <div class="top-num">
+        <div class="number">
+          01
+        </div>
+        <div class="top-title">
+          Reviving Retro PCs
+        </div>
+        <div class="top-desc">
+          What happens when old PCs are given modern upgrades?
+        </div>
+      </div>
+
+    </div>
+    <div class="top2">
+      <div class="top-image">
+        <img src="assets/images/image-top-laptops.jpg" alt="">
+      </div>
+      <div class="top-num">
+        <div class="number">
+          02
+        </div>
+        <div class="top-title">
+          Top 10 Laptops of 2022
+        </div>
+        <div class="top-desc">
+          Our best picks for various needs and budgets.
+        </div>
+      </div>
+    </div>
+    <div class="top3">
+      <div class="top-image">
+        <img src="assets/images/image-gaming-growth.jpg" alt="">
+      </div>
+      <div class="top-num">
+        <div class="number">
+          03
+        </div>
+        <div class="top-title">
+          The Growth of Gaming
+        </div>
+        <div class="top-desc">
+          How the pandemic has sparked fresh opportunities.
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/ItsTrolly">ItsTrolly</a>.
+  </div>
+</footer>
+
+</body>
+<script src="app.js"></script>
+</html>
