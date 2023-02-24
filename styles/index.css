@@ -34,7 +34,7 @@ nav{
 main{
     max-width: 1500px;
 }
-.top-container{
+.top-contenedor{
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-gap: 2em;
@@ -75,7 +75,7 @@ h1{
     background-color: hsl(240, 100%, 5%);
     cursor: pointer;
 }
-.future-container{
+.future-contenedor{
     display: flex;
     flex-direction: column;
 }
@@ -146,7 +146,7 @@ span{
     height: 100%;
     width: 70%;
 }
-.number{
+.numero{
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: auto;
@@ -173,7 +173,7 @@ footer{
     main{
         display: block;
     }
-    .top-container{
+    .top-contenedor{
         display: block;
     }
     .future-article{
